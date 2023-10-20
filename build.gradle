@@ -10,7 +10,6 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java'
     id 'maven-publish'
-    id 'org.springframework.boot' version '3.1.4'
 }
 
 group = 'com.github.andrepost'
@@ -18,11 +17,6 @@ version = '1.0'
 
 repositories {
     mavenCentral()
-}
-
-java {
-    targetCompatibility = JavaVersion.VERSION_17
-    sourceCompatibility = JavaVersion.VERSION_17
 }
 
 dependencies {
