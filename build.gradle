@@ -20,6 +20,11 @@ repositories {
     mavenCentral()
 }
 
+java {
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
+}
+
 dependencies {
     implementation 'com.google.guava:guava:31.1-jre'
     implementation 'org.springframework.kafka:spring-kafka:3.0.9'
